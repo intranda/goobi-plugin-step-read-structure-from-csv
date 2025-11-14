@@ -12,10 +12,33 @@
         <project>*</project>
         <step>*</step>
         
-        <!-- sample parameter -->
-        <value>test</value>
-        <!-- display button to finish the task directly from within the entered plugin -->
-        <allowTaskFinishButtons>true</allowTaskFinishButtons>
+        <!-- column where the identifier is used to notice in which row a new object starts -->
+        <idColumn>object_id</idColumn>
+        
+        <!-- column where the pagination is included -->
+        <paginationColumn>pageNo</paginationColumn>
+        
+        <!-- column where the file name is included -->
+        <fileColumn>file_Name</fileColumn>
+        
+        <!-- mimetype to use -->
+        <fileMimeType>image/tiff</fileMimeType>
+
+        <!-- file extension use -->
+        <fileExtension>.tif</fileExtension>
+        
+        <!-- structure type to create for each object -->
+        <structureTypes>Letter</structureTypes>
+        
+        <!-- list of metadata fields -->
+        <column header="object_title" ruleset="TitleDocMain" person="false"/>
+        <column header="date_YYYY" ruleset="DateOfOrigin" person="false"/>
+        <column header="date_MM" ruleset="DateOfOrigin" person="false"/>
+        <column header="date_DD" ruleset="DateOfOrigin" person="false"/>
+        <column header="date" ruleset="DateOfOrigin" person="false"/>
+        <column header="sender_full-name" ruleset="Author" person="true" separator=","/>
+        <column header="receiver_full-name" ruleset="Recipient" person="true" separator=","/>
+        
     </config>
 
 </config_plugin>
