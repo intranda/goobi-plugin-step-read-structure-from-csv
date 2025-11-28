@@ -32,12 +32,9 @@
         
         <!-- list of metadata fields -->
         <column header="object_title" ruleset="TitleDocMain" person="false"/>
-        <column header="date_YYYY" ruleset="DateOfOrigin" person="false"/>
-        <column header="date_MM" ruleset="DateOfOrigin" person="false"/>
-        <column header="date_DD" ruleset="DateOfOrigin" person="false"/>
         <column header="date" ruleset="DateOfOrigin" person="false"/>
-        <column header="sender_full-name" ruleset="Author" person="true" separator=","/>
-        <column header="receiver_full-name" ruleset="Recipient" person="true" separator=","/>
+        <column header="sender" ruleset="Author" person="true" separator=","/>
+        <column header="receiver" ruleset="Recipient" person="true" separator=","/>
         
     </config>
 
